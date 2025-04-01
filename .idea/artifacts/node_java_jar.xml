@@ -7,6 +7,7 @@
       <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-core/2.18.3/jackson-core-2.18.3.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.18.3/jackson-databind-2.18.3.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-annotations/2.18.3/jackson-annotations-2.18.3.jar" path-in-jar="/" />
+      <element id="library" level="project" name="Maven: com.pi4j:pi4j-core:2.4.0" />
     </root>
   </artifact>
 </component>

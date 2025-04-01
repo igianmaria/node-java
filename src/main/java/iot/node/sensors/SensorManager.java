@@ -29,4 +29,9 @@ public class SensorManager implements SensorEventListener {
     public void onSensorDataReady(String sensorName, Message message) {
         System.out.println("Sensor " + sensorName + " sending data:" + message);
     }
+
+    @Override
+    public void onSensorAlarm(String sensorName, Message message) {
+
+    }
 }

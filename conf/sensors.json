@@ -5,5 +5,12 @@
     "version": "1.0",
     "url": "https://loc.gnmr.it/deployables/DS18B20-1.1.jar",
     "readIntervall": 5
+  },
+  {
+    "name": "ADXL345",
+    "className": "iot.ADXL345",
+    "version": "1.0",
+    "url": "https://loc.gnmr.it/deployables/ADXL345-1.1.jar",
+    "readIntervall": 5
   }
 ]

@@ -42,21 +42,26 @@ public class SensorLoader {
         CompletableFuture.allOf(futures.toArray(new CompletableFuture[0])).join();
     }
 
-    private void loadSensor(SensorDescriptor descriptor, SensorEventListener listener) throws Exception {
+    private void loadSensor(SensorDescriptor descriptor, SensorEventListener listener) {
 
-        System.out.println(TAG + "Inizializzo sensore dal classpath: " + descriptor.getClassName());
+        try {
+            System.out.println(TAG + "Inizializzo sensore dal classpath: " + descriptor.getClassName());
 
-        Class<?> sensorClass = Class.forName(descriptor.getClassName());
-        Sensor sensor = (Sensor) sensorClass.getDeclaredConstructor().newInstance();
+            Class<?> sensorClass = Class.forName(descriptor.getClassName());
+            Sensor sensor = (Sensor) sensorClass.getDeclaredConstructor().newInstance();
 
-        sensor.setSensorEventListener(listener);
-        sensor.initialize();
+            sensor.setSensorEventListener(listener);
+            sensor.initialize();
 
-        if (descriptor.getReadIntervall() != 0) {
-            sensor.setReadingInterval(descriptor.getReadIntervall());
+            if (descriptor.getReadIntervall() != 0) {
+                sensor.setReadingInterval(descriptor.getReadIntervall());
+            }
+
+            loadedSensors.put(descriptor.getName(), sensor);
+        } catch (Exception e) {
+            System.err.println(TAG + "Errore nel caricamento del sensore: " + descriptor.getName());
+            e.printStackTrace();
         }
-
-        loadedSensors.put(descriptor.getName(), sensor);
     }
 
     public Map<String, Sensor> getAllSensors() {
