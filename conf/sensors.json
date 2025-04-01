@@ -1,0 +1,9 @@
+[
+  {
+    "name": "DS18B20",
+    "className": "iot.DS18B20",
+    "version": "1.0",
+    "url": "https://loc.gnmr.it/deployables/DS18B20-1.1.jar",
+    "readIntervall": 5
+  }
+]
