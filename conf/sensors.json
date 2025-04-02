@@ -1,16 +1,21 @@
 [
   {
     "name": "DS18B20",
-    "className": "iot.DS18B20",
+    "className": "iot.hw.DS18B20",
     "version": "1.0",
     "url": "https://loc.gnmr.it/deployables/DS18B20-1.1.jar",
-    "readIntervall": 5
+    "sendIntervall": 50,
+    "equipmentTempType": "Industrial",
+    "equipmentVibsType": "Small-Machine"
+
   },
   {
     "name": "ADXL345",
-    "className": "iot.ADXL345",
+    "className": "iot.hw.ADXL345",
     "version": "1.0",
     "url": "https://loc.gnmr.it/deployables/ADXL345-1.1.jar",
-    "readIntervall": 5
+    "sendIntervall": 50,
+    "equipmentTempType": "Industrial",
+    "equipmentVibsType": "Small-Machine"
   }
 ]

@@ -1,0 +1,44 @@
+_______________________________________________________________________________________________
+TEMPERATURE
+-----------------------------------------------------------------------------------------------
+Commercial, Military & Industrial Temperature Range
+                              MIN.(C)                MAX
+Commercial                    0.0                   70.0
+Extended-Commercial         -20.0                   85.0
+Hi-Temp-Commercial          -10.0                  100.0
+Industrial                  -40.0                   85.0
+Extended-Industrial         -40.0                   85.0
+Power-Supply                -40.0                  130.0
+Military                    -55.0                  125.0
+Automotive                  -25.0                  125.0
+AEC-Q100-Level-2            -40.0                  105.0
+
+
+_______________________________________________________________________________________________
+VIBRAZIONI
+-----------------------------------------------------------------------------------------------
+
+La norma ISO 10816-3 fornisce linee guida per valutare la severità delle vibrazioni nelle macchine industriali, classificando i livelli di vibrazione in quattro zone:
+
+Zona A (Macchinari di nuova installazione): Livelli di vibrazione tipici di macchine appena messe in servizio.
+Zona B (Operazione senza restrizioni): Livelli di vibrazione accettabili per un funzionamento continuo e a lungo termine.
+Zona C (Operazione con restrizioni): Livelli di vibrazione considerati insoddisfacenti per un funzionamento continuo prolungato; si consiglia un intervento di manutenzione.
+Zona D (Danno possibile): Livelli di vibrazione sufficientemente elevati da poter causare danni alla macchina; è necessario un intervento immediato.
+
+I limiti specifici per ciascuna zona dipendono dalla potenza della macchina, dalla sua dimensione e dal tipo di montaggio (rigido o flessibile).
+Ad esempio, per macchine con potenza tra 15 kW e 300 kW montate su base rigida, i limiti di velocità di vibrazione (in mm/s RMS) sono:
+
+Zona A: Fino a 2,8 mm/s
+Zona B: Da 2,8 a 4,5 mm/s
+Zona C: Da 4,5 a 7,1 mm/s
+Zona D: Oltre 7,1 mm/s
+
+╔═══════════════════════════════════╦══════════════════════════╦══════════════════════╦══════════════════════════╗
+║         Tipo Macchina             ║    Operazione Normale    ║  Operazione Limitata ║      Danno Possibile     ║
+║          (montaggio)              ║     (UNRESTRICTED)       ║   (RESTRICTED)       ║    (DAMAGE_POSSIBLE)     ║
+╠═══════════════════════════════════╬══════════════════════════╬══════════════════════╬══════════════════════════╣
+║ Small-Machine - Montaggio Rigido  ║  0.0 – 2.8 mm/s          ║  2.8 – 4.5 mm/s      ║   > 4.5 mm/s             ║
+║ Medium-Machine - Montaggio Rigido ║  0.0 – 2.8 mm/s          ║  2.8 – 7.1 mm/s      ║   > 7.1 mm/s             ║
+║ Large-Machine - Montaggio Rigido  ║  0.0 – 4.5 mm/s          ║  4.5 – 7.1 mm/s      ║   > 7.1 mm/s             ║
+║ Large-Machine-Flex - Flessibile   ║  0.0 – 7.1 mm/s          ║  7.1 – 11.2 mm/s     ║   > 11.2 mm/s            ║
+╚═══════════════════════════════════╩══════════════════════════╩══════════════════════╩══════════════════════════╝
