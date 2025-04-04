@@ -1,7 +1,6 @@
 package iot;
 
-import iot.node.sensors.SensorLoader;
-import iot.node.sensors.SensorManager;
+import iot.node.model.SensorManager;
 
 public class Main {
     public static void main(String[] args) throws Exception {

@@ -1,5 +1,6 @@
-package iot.node.sensors;
+package iot.node.model;
 
+import iot.Node;
 import iot.Sensor;
 import iot.SensorEventListener;
 import iot.messagging.Message;
@@ -13,10 +14,9 @@ public class SensorManager implements SensorEventListener {
 
     public void startAllSensors() throws Exception {
 
-        SensorLoader.getInstance().loadSensorsFromJson( this);
-
-        SensorLoader.getInstance().getAllSensors().values().forEach(sensor -> {
-            sensor.setSensorEventListener(this);
+        SensorLoader.getInstance().loadNode();
+        Node.sensors.forEach(sensor -> {
+            sensor.setListener(this);
             sensor.turnOn();
         });
     }
@@ -32,6 +32,6 @@ public class SensorManager implements SensorEventListener {
 
     @Override
     public void onSensorAlarm(String sensorName, Message message) {
-
+        System.out.println("Sensor " + sensorName + " sending alarm:" + message);
     }
 }

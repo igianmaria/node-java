@@ -1,12 +1,12 @@
-package iot.node.sensors;
+package iot.node;
 
 import lombok.Data;
 
 @Data
-public class SensorDescriptor {
+public class RawSensorDescriptor {
     private String name;
     private String className;
     private String version;
-    private String url;
-    private int readIntervall;
+    private String updateURL;
+    private int sendInterval;
 }

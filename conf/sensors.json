@@ -1,21 +1,18 @@
-[
-  {
-    "name": "DS18B20",
-    "className": "iot.hw.DS18B20",
-    "version": "1.0",
-    "url": "https://loc.gnmr.it/deployables/DS18B20-1.1.jar",
-    "sendIntervall": 50,
-    "equipmentTempType": "Industrial",
-    "equipmentVibsType": "Small-Machine"
-
-  },
-  {
-    "name": "ADXL345",
-    "className": "iot.hw.ADXL345",
-    "version": "1.0",
-    "url": "https://loc.gnmr.it/deployables/ADXL345-1.1.jar",
-    "sendIntervall": 50,
-    "equipmentTempType": "Industrial",
-    "equipmentVibsType": "Small-Machine"
-  }
-]
+{
+  "temperatureType": "COMMERCIAL",
+  "vibrationType": "SMALL_MACHINE_RIGID",
+  "sensors": [
+    {
+      "className": "iot.hw.DS18B20",
+      "version": "1.0",
+      "updateURL": "https://loc.gnmr.it/deployables/DS18B20-1.1.jar",
+      "sendInterval": 10
+    },
+    {
+      "className": "iot.hw.ADXL345",
+      "version": "1.0",
+      "updateURL": "https://loc.gnmr.it/deployables/ADXL345-1.1.jar",
+      "sendInterval": 10
+    }
+  ]
+}
